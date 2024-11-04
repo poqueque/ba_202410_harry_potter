@@ -4,6 +4,9 @@ class Character {
   final int strenght;
   final int magic;
   final int speed;
+  int totalReviews = 0;
+  int totalStars = 0;
+  double get averageStars => (totalReviews == 0) ? 0 : totalStars/totalReviews;
 
   Character({
     required this.name,
